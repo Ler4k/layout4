@@ -1,0 +1,28 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ler4k/layout4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ler4k/layout4/issues"
+  },
+  "homepage": "https://github.com/Ler4k/layout4#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.35.1"
+  },
+  "dependencies": {}
+}
