@@ -1,49 +1,146 @@
-.nav-wrapper {
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Light.ttf") format("ttf"), url("/fonts/OpenSans-Bold.ttf") format("ttf");
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  font-size: 12px;
+  text-align: center;
+}
+header .btn-primary:not(:disabled):not(.disabled).active, header .btn-primary:not(:disabled):not(.disabled):active, header .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+header .navbar-light .navbar-toggler {
+  border-color: #337ab7;
+  background-color: #337ab7;
+}
+header .navbar-light .navbar-toggler-icon {
+  background-image: url("../images/icons/bur_ico.png");
+}
+header .form-inline {
+  justify-content: center;
+}
+header .nav-wrapper {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: #ffffff;
   box-shadow: 0 0 10px black;
+  z-index: 10;
 }
-
-.navbar {
+header .navbar {
   background-color: #ffffff;
   width: 1220px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.navbar img {
+header .navbar img {
   width: 80px;
   height: 80px;
 }
-.navbar .btn-lg {
+header .navbar .btn-lg {
   border-radius: 24px;
 }
-.navbar .btn {
+header .navbar .btn {
   font-size: 12px;
 }
-.navbar .nav-link {
+header .navbar .nav-link {
   padding: 10px 22px;
 }
 
-body {
-  font-size: 12px;
-  text-align: center;
+*, ::after, ::before {
+  box-sizing: content-box;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
-  padding: 0 22px;
-}
-
-.navbar-toggler {
-  background-color: #337ab7;
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("../images/icons/bur_ico.png");
-}
-
-.form-inline {
+.content {
+  width: 100%;
+  display: flex;
   justify-content: center;
+  background-color: #f7f7f7;
+}
+.content .reg-block {
+  display: flex;
+  flex-direction: row;
+  width: 1220px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.content .reg-block .reg-info {
+  width: 538px;
+  height: 347px;
+  text-align: center;
+  padding-top: 210px;
+}
+.content .reg-block .reg-info .reg-title {
+  font-size: 29px;
+  font-weight: 700;
+}
+.content .reg-block .reg-info .reg-text {
+  line-height: 31px;
+  letter-spacing: -1px;
+}
+.content .reg-block .reg-form {
+  padding-top: 57px;
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+}
+.content .reg-block .reg-form .inp-name {
+  padding: 10px 0;
+}
+.content .reg-block .reg-form .inp-name:after {
+  content: "*";
+  color: red;
+}
+.content .reg-block .reg-form .inp {
+  padding-left: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+}
+.content .reg-block .reg-form .check-inp {
+  margin-right: 10px;
+}
+.content .reg-block .reg-form .form-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.content .reg-block .reg-form .button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.content .reg-block .reg-form .button-wrapper .reg-button:hover {
+  cursor: pointer;
+}
+.content .reg-block .reg-form .button-wrapper .reg-button {
+  width: 368px;
+  height: 51px;
+  background-color: #337ab7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 24px;
+  color: #ffffff;
+}
+
+@media screen and (max-device-width: 1185px) {
+  .content .reg-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .reg-block .reg-info, .content .reg-block .reg-form {
+    padding-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
