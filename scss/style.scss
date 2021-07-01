@@ -3,8 +3,15 @@
   src: url("/fonts/OpenSans-Light.ttf") format("ttf"),
   url("/fonts/OpenSans-Bold.ttf") format("ttf");
 }
+html{
+  font-family: "Open Sans",sans-serif;
+  overflow-x:hidden;
+
+}
 body{
   font-family: "Open Sans",sans-serif;
+  overflow-x:hidden;
+
 }
 header {
   font-size: 12px;
@@ -68,10 +75,12 @@ header {
   box-sizing: content-box;
   }
 
-.content{
+.reg-wrapper, .dev-block-wrapper, .stat-wrapper{
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.reg-wrapper{
   background-color: #f7f7f7;
   .reg-block{
     display: flex;
@@ -84,7 +93,6 @@ header {
     align-items: center;
     .reg-info {
       width: 538px;
-      height: 347px;
       text-align: center;
       padding-top: 210px;
 
@@ -146,13 +154,199 @@ header {
     }
   }
 }
+.dev-block-wrapper {
+  padding-top: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+  span{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .dev-block {
+    width: 1220px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 0;
+    .slick-list{
+      overflow: hidden;
+    }
+    .dev-elem{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 350px;
+      height: 325px;
+      min-width: 0;
+      img {
+        width: 65px;
+        height: 71px;
+        min-width: 0;
+      }
+      span{
+        border-bottom: 1px solid #337ab7;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        text-align: center;
+        padding-bottom: 20px;
+        min-width: 0;
+      }
+      span:last-child{
+        padding-top: 40px ;
+        border-bottom: 0;
+        font-size: 16px;
+        min-width: 0;
+        width: 300px;
+      }
+    }
+  }
+}
+
+.stat-wrapper{
+  background-color: #3498db;
+  .stat-block{
+    width: 1220px;
+    padding: 0 15px;
+    display: flex;
+  flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  .stat-elem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 45px;
+    padding: 80px 0;
+    color: #ffffff;
+    img{
+      padding-bottom: 25px;
+      width: 72px;
+      height: 50px;
+    }
+    span{
+      font-size: 25px;
+    }
+    span:last-child{
+      font-size: 15px;
+    }
+  }
+  }
+}
+.dev-block .slick-track{
+  display: flex;
+}
+.dev-block .slick-dots{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.dev-block .slick-dots li{
+  list-style: none;
+  margin: 0 10px;
+}
+.dev-block .slick-dots button{
+  font-size: 0;
+  width: 5px;
+  height: 10px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  border: 0;
+}
+ .dev-block .slick-dots .slick-active button{
+  background-color: #666666;
+}
+.stat-folder{
+  display: flex;
+  justify-content: center;
+}
+
+.reply-wrapper{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction:column;
+  span{
+    font-size: 30px;
+  }
+  .reply-slider{
+    span{
+      font-size: 15px;
+      width: 1220px;
+      display: block;
+    }
+
+    span:first-child{
+
+    }
+    span:last-child{
+
+    }
+    .slick-track{
+      display: flex;
+    }
+    min-width: 0;
+    .reply-item{
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .reply-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+}
 
 @media screen and (max-device-width: 1185px) {
-  .content .reg-block{
+  .reg-wrapper .reg-block {
     display: flex;
     flex-direction: column;
-.reg-info, .reg-form{
-  padding-top: 30px;
+
+    .reg-info, .reg-form {
+      padding-top: 30px;
+    }
+  }
+  .dev-block-wrapper .dev-block {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+  .stat-block {
+   .stat-folder .stat-elem {
+      width: 325px;
+      height: 107px;
+      margin: 0 10px;
+    }
+  }
 }
+
+@media screen and (max-device-width: 750px) {
+  .reg-wrapper .reg-block {
+    .reg-info, .reg-form {
+      width: 300px;
+      box-sizing: content-box;
+    }
+
+  }
+  .dev-block-wrapper .dev-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat-block {
+    .stat-folder .stat-elem {
+      width: 145px;
+      height: 107px;
+      text-align: center;
+        margin: 0 10px;
+    }
   }
 }
