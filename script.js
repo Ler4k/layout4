@@ -30,6 +30,12 @@ $(document).ready(function () {
     });
     $('.reply-slider').slick({
         slidesToShow: 1,
-        arrows:false
+        arrows:false,
+    dots:true
+    });
+    $('.ment-slider').slick({
+        slidesToShow: 1,
+        arrows:false,
+        dots:true
     })
 });
