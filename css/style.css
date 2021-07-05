@@ -24,8 +24,9 @@ header .navbar-light .navbar-toggler {
   border-color: #337ab7;
   background-color: #337ab7;
 }
-header nav .nav-link:hover {
+header .nav-link:focus, header .navbar-light .navbar-nav .nav-link:hover {
   background-color: #eeeeee;
+  color: #337ab7;
 }
 header .navbar-light .navbar-toggler-icon {
   background-image: url("../images/icons/bur_ico.png");
@@ -34,7 +35,7 @@ header .form-inline {
   justify-content: center;
 }
 header .nav-wrapper {
-  position: relative;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -58,8 +59,10 @@ header .navbar .btn-lg {
 header .navbar .btn {
   font-size: 12px;
 }
-header .navbar .nav-link {
-  padding: 10px 22px;
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 22px;
+  padding-left: 22px;
 }
 
 *, ::after, ::before {
@@ -73,6 +76,7 @@ header .navbar .nav-link {
 }
 
 .reg-wrapper {
+  margin-top: 100px;
   background-color: #f7f7f7;
 }
 .reg-wrapper .reg-block {
@@ -143,6 +147,9 @@ header .navbar .nav-link {
   border-radius: 24px;
   color: #ffffff;
 }
+.reg-wrapper .reg-block .reg-form .inp:focus {
+  box-shadow: 0px 0px 10px #337ab7;
+}
 
 .dev-block-wrapper {
   padding-top: 76px;
@@ -159,7 +166,7 @@ header .navbar .nav-link {
 }
 .dev-block-wrapper .dev-block {
   width: 1220px;
-  padding: 15px 0;
+  padding: 0 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -173,7 +180,6 @@ header .navbar .nav-link {
   align-items: center;
   flex-direction: column;
   width: 350px;
-  height: 325px;
   min-width: 0;
 }
 .dev-block-wrapper .dev-block .dev-elem img {
@@ -282,7 +288,7 @@ header .navbar .nav-link {
   font-size: 15px;
   width: 900px;
   display: block;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 .reply-wrapper .reply-slider span:last-child {
   color: #787878;
@@ -365,8 +371,8 @@ header .navbar .nav-link {
   padding-bottom: 20px;
 }
 .vid-wrapper iframe {
-  width: 1021px;
-  height: 520px;
+  width: 1020px;
+  height: 510px;
   padding-bottom: 50px;
 }
 
@@ -456,6 +462,11 @@ header .navbar .nav-link {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .contact .wrap-row {
+  display: flex;
+  flex-direction: row;
 }
 .footer .contact .contact-item {
   display: flex;
@@ -463,6 +474,7 @@ header .navbar .nav-link {
   align-items: center;
   margin: 40px 60px;
   color: #ffffff;
+  width: 170px;
 }
 .footer .contact .contact-item i {
   font-size: 40px;
@@ -472,22 +484,29 @@ header .navbar .nav-link {
   font-size: 15px;
   font-weight: 700;
 }
+.footer .contact .contact-item span a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .footer .contact .contact-item span:last-child {
   font-weight: 500;
   letter-spacing: -1px;
 }
 .footer .footer-content {
   text-align: center;
-  display: flex;
-  flex-direction: column;
   padding: 30px 0;
   background-color: #f7f7f7;
 }
-.footer .footer-content span:first-child {
+.footer .footer-content a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.footer .footer-content a span:first-child {
   color: #3498db;
   padding-bottom: 10px;
 }
-.footer .footer-content span {
+.footer .footer-content a span {
   font-size: 10px;
   color: #93938e;
 }
@@ -544,7 +563,11 @@ header .navbar .nav-link {
     width: 700px;
   }
   .vid-wrapper iframe {
-    width: 700px;
+    width: 100%;
+  }
+
+  .stat-folder:last-child {
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-device-width: 750px) {
@@ -579,9 +602,6 @@ header .navbar .nav-link {
     text-align: center;
     width: 300px;
   }
-  .vid-wrapper iframe {
-    width: 300px;
-  }
 
   .ment-wrapper .ment-slider .ment-item {
     flex-direction: column;
@@ -598,7 +618,28 @@ header .navbar .nav-link {
 @media screen and (max-device-width: 500px) {
   .ment-wrapper .ment-slider .ment-item .ment-info span:last-child {
     width: 300px;
-    color: #3498db;
+  }
+
+  .reply-wrapper .reply-slider .reply-item span {
+    width: 250px;
+  }
+
+  .footer .contact .wrap-row {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer .contact .wrap-row .contact-item {
+    margin: 40px 0;
+  }
+
+  .footer .contact .wrap-row .contact-item span {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .dev-block-wrapper .dev-block .slick-list .dev-elem span {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

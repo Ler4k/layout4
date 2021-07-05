@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.dev-block').slick({
         dots: false,
         arrows: false,
-        infinite: false,
+        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [
@@ -31,11 +31,19 @@ $(document).ready(function () {
     $('.reply-slider').slick({
         slidesToShow: 1,
         arrows:false,
-    dots:true
+        dots:true,
+        infinite: true,
+        speed: 1000,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 10000,
     });
     $('.ment-slider').slick({
         slidesToShow: 1,
         arrows:false,
-        dots:true
+        dots:true,
+        autoplay: true,
+        autoplaySpeed: 10000,
     })
 });

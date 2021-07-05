@@ -19,19 +19,19 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Головна</a>
+                <a class="nav-link" href="#top">Головна</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Програма курсу</a>
+                <a class="nav-link" href="#dev">Програма курсу</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Відгуки про курс</a>
+                <a class="nav-link" href="#rep">Відгуки про курс</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Відео</a>
+                <a class="nav-link" href="#vid">Відео</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Ментори</a>
+                <a class="nav-link" href="#ment">Ментори</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -41,7 +41,7 @@
 </nav>
 </div>
 </header>
-<div class="reg-wrapper">
+<div class="reg-wrapper" id="top">
 <div class="reg-block">
     <div class="reg-info">
         <h1 class="reg-title">Курси програмування у Луцьку</h1>
@@ -65,7 +65,7 @@
     </div>
 </div>
 </div>
-<div class="dev-block-wrapper">
+<div class="dev-block-wrapper" id="dev">
     <span>Курс &#171Розробка сайтів&#187</span>
     <div class="dev-block">
         <div class="dev-elem">
@@ -83,7 +83,6 @@
             <span>Ознайомлення з тестування</span>
         <span>Ти дізнаєшся про забеспечення якості в контексті різних моделей розробки моделей ПЗ. Також QA-спеціаліст розкаже про види тестування(функціональне, регресивне, системне тестування швидкодії).</span>
         </div>
-
     </div>
 </div>
 <div class="stat-wrapper">
@@ -114,7 +113,7 @@
     </div>
     </div>
 </div>
-<div class="reply-wrapper">
+<div class="reply-wrapper" id="rep">
     <span> Що кажуть студенти наших курсів:</span>
     <div class="reply-slider">
         <div class="reply-item">
@@ -139,12 +138,12 @@
         </div>
     </div>
 </div>
-<div class="vid-wrapper">
+<div class="vid-wrapper" id="vid">
     <span>Відео</span>
     <span>Lorem Ipsum - це текст "риба" що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифовану гранку та склав на ній підбірку зразків шрифтів. "Риба не тільки успішно пережила п'ять століть, але й прижиласб в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки программам компʼютерного верстування на кшталт Aldus Pagemaker, які використовували резні версії Lorem Ipsum. "</span>
     <iframe src="https://www.youtube.com/embed/m0-Qd2jIM24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<div class="ment-wrapper">
+<div class="ment-wrapper" id="ment">
     <span>Наші ментори:</span>
     <div class="ment-slider">
         <div class="ment-item">
@@ -188,16 +187,19 @@
 <div class="footer">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157.7952723417377!2d25.3207364666697!3d50.74360109967056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599ebf61430d7%3A0xbdac99edfc589e0f!2z0KHRgtCw0YDQtSDQvNGW0YHRgtC-!5e0!3m2!1suk!2sua!4v1624881225897!5m2!1suk!2sua" width="100%" height="400" style="border:0" allowfullscreen="" loading="lazy"></iframe>
     <div class="contact">
+        <div class="wrap-row">
         <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
             <span>Телефон</span>
-            <span>+38 067 332 17 55</span>
+            <span><a href="">+38 067 332 17 55</a></span>
         </div>
         <div class="contact-item">
             <i class="fas fa-envelope"></i>
             <span>E-mail</span>
             <span>office@it.volun.ua</span>
         </div>
+        </div>
+        <div class="wrap-row">
         <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
             <span>Адреса</span>
@@ -206,12 +208,13 @@
         <div class="contact-item">
             <i class="fab fa-facebook-f"></i>
             <span>Facebook</span>
-            <span>facebook.com/oxitschool</span>
+            <span><a href="">facebook.com/oxitschool</a></span>
+        </div>
         </div>
     </div>
     <div class="footer-content">
-        <span>&#169 Copyright 2018-2020 Internet Devels</span>
-        <span> Умови політики конфіденційності</span>
+        <a href=""><span>&#169 Copyright 2018-2020 Internet Devels</span>
+        <span> Умови політики конфіденційності</span></a>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
