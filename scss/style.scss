@@ -44,7 +44,7 @@ header {
     justify-content: center;
     background-color: #ffffff;
     box-shadow: 0 0 10px black;
-    z-index: 10;
+    z-index: 10000;
   }
 
   .navbar {
@@ -167,10 +167,10 @@ header {
   align-items: center;
   margin-bottom: 45px;
   span{
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 35px;
     letter-spacing: -1px;
     text-align: center;
+    padding-bottom:20px;
   }
   .dev-block {
     width: 1220px;
@@ -192,6 +192,7 @@ header {
         width: 65px;
         height: 71px;
         min-width: 0;
+        padding-bottom: 10px;
       }
       span{
         border-bottom: 1px solid #337ab7;
@@ -203,6 +204,7 @@ header {
         min-width: 0;
       }
       span:last-child{
+        color:#a3a3a3;
         padding-top: 40px ;
         border-bottom: 0;
         font-size: 16px;
@@ -282,6 +284,7 @@ header {
   span{
     font-size: 30px;
     letter-spacing: -1px;
+    margin-bottom: 15px;
   }
   .reply-slider{
     span{
@@ -629,6 +632,10 @@ header {
   .ment-wrapper .ment-slider .ment-item {
     flex-direction: column;
     align-items: center;
+    img{
+      width: 145px;
+      height: 145px;
+    }
     .ment-info {
       align-items: center;
     span{
@@ -646,8 +653,8 @@ header {
     }
   }
   .reply-wrapper .reply-slider .reply-item span {
-      width: 250px;
-    }
+    width: 250px;
+  }
   .footer .contact .wrap-row {
     width: 100%;
     justify-content: center;
@@ -656,10 +663,13 @@ header {
     margin: 40px 0;
   }
   .footer .contact .wrap-row .contact-item span {
-          font-size: 12px;
-          text-align: center;
-        }
-  .dev-block-wrapper .dev-block .slick-list .dev-elem span{
-          font-size: 20px;
-        }
-      }
+    font-size: 12px;
+    text-align: center;
+  }
+  .dev-block-wrapper .dev-block .slick-list .dev-elem {
+    span {
+      font-size: 20px;
+    }
+    span:last-child{font-size: 15px;}
+  }
+}

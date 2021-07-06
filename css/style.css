@@ -41,7 +41,7 @@ header .nav-wrapper {
   justify-content: center;
   background-color: #ffffff;
   box-shadow: 0 0 10px black;
-  z-index: 10;
+  z-index: 10000;
 }
 header .navbar {
   background-color: #ffffff;
@@ -159,10 +159,10 @@ header .navbar .btn {
   margin-bottom: 45px;
 }
 .dev-block-wrapper span {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 35px;
   letter-spacing: -1px;
   text-align: center;
+  padding-bottom: 20px;
 }
 .dev-block-wrapper .dev-block {
   width: 1220px;
@@ -186,6 +186,7 @@ header .navbar .btn {
   width: 65px;
   height: 71px;
   min-width: 0;
+  padding-bottom: 10px;
 }
 .dev-block-wrapper .dev-block .dev-elem span {
   border-bottom: 1px solid #337ab7;
@@ -197,6 +198,7 @@ header .navbar .btn {
   min-width: 0;
 }
 .dev-block-wrapper .dev-block .dev-elem span:last-child {
+  color: #a3a3a3;
   padding-top: 40px;
   border-bottom: 0;
   font-size: 16px;
@@ -280,6 +282,7 @@ header .navbar .btn {
 .reply-wrapper span {
   font-size: 30px;
   letter-spacing: -1px;
+  margin-bottom: 15px;
 }
 .reply-wrapper .reply-slider {
   min-width: 0;
@@ -607,6 +610,10 @@ header .navbar .btn {
     flex-direction: column;
     align-items: center;
   }
+  .ment-wrapper .ment-slider .ment-item img {
+    width: 145px;
+    height: 145px;
+  }
   .ment-wrapper .ment-slider .ment-item .ment-info {
     align-items: center;
   }
@@ -640,6 +647,9 @@ header .navbar .btn {
 
   .dev-block-wrapper .dev-block .slick-list .dev-elem span {
     font-size: 20px;
+  }
+  .dev-block-wrapper .dev-block .slick-list .dev-elem span:last-child {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
